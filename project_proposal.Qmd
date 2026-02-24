@@ -1,0 +1,69 @@
+---
+title: "Project Proposal Testing"
+author: "Asmit Chakraborty"
+output:
+    pdf_document: default
+fontsize: 11pt
+---
+
+```{r}
+beats <- read.csv("tx_houston_shapefiles/Houston_Police_Beats.csv", header=TRUE)
+districts <- read.csv("tx_houston_shapefiles/Houston_Police_Districts.csv")
+divisions <- read.csv("tx_houston_shapefiles/Houston_Police_Division.csv")
+df <- read.csv("tx_houston_2023_01_26.csv")
+```
+
+```{r}
+summary(df)
+
+table(df$subject_race)
+table(df$subject_sex)
+table(df$type) # All vehicular
+table(df$outcome) # All citation
+table(df$district) # Could be interesting
+table(df$citation_issued) # All TRUE
+summary(df$speed) # about 30% of obs have speed tracked, what is speed vs posted speed?
+```
+
+Houston seems kind of boring. All stops received a cittion?
+
+Potentially interesting problems
+- clustering "high police stop risk" areas?
+- Anything on differences between speeds in houston vs austin?
+
+Newer (but have not looked closely at data yet for these)
+- Clearly there are racial disparities in police stops. Are these more influenced
+by who is stopped (age, race, sex, etc) or where the stop happened (district, etc)
+  - Fit some sort of mixed effects model?
+
+- Do stops/searches change based on day / night?
+  - Idea is that, at night, police have a harder time profiling people
+
+- For similar violations, are any demographic characteristics associated with a higher
+likelihood of getting a citation or going to jail?
+
+```{r}
+df2 <- read.csv("~/Downloads/California.csv")
+View(df2)
+```
+
+
+FIPS is the tract code
+
+E_HU is the like estimated # of houses in that tract
+
+so theres like house-level data which should lead us to be able to combine
+tracts inside each of the like precincts or whatever those policing zones were
+in that map i sent earlier
+
+I think
+
+Then we can take an average across all the tracts in each policing zone 
+
+and if the SOPP data row {i} sits in precinct {j}, then the SVI column for row {i}
+should be like the average of all the tract SVIs in precinct {j}
+
+also like thats my ideal guess of how this would work out without having done any of it yet
+
+
+do i keep sharing screen....
