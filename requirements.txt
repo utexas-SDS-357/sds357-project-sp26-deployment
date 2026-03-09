@@ -6,4 +6,6 @@ jupyter
 shapely
 pyogrio
 fiona
+scipy
+scikit-learn
 
