@@ -8,4 +8,4 @@ pyogrio
 fiona
 scipy
 scikit-learn
-
+xgboost
