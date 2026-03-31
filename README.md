@@ -38,4 +38,5 @@ This keeps file paths consistent across notebooks.
 
 ## Installation Instructions
 We recommend using a virtual environment. Dependencies can be found in `requirements.txt`.
-The exact versions used for analysis can be found in `requirements-lock.txt`.
+The exact versions used for analysis can be found in `requirements-lock.txt`. The second chunk in
+`notebooks/0_data_wrangling.ipynb` contains the relevant code.
