@@ -2,10 +2,10 @@ pandas
 geopandas
 numpy
 matplotlib
+seaborn
 jupyter
 shapely
 pyogrio
 fiona
+scipy
 scikit-learn
-xgboost
-
