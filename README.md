@@ -40,3 +40,11 @@ This keeps file paths consistent across notebooks.
 We recommend using a virtual environment. Dependencies can be found in `requirements.txt`.
 The exact versions used for analysis can be found in `requirements-lock.txt`. The second chunk in
 `notebooks/0_data_wrangling.ipynb` contains the relevant code.
+
+## Hardware
+All results in this project were obtained using Jupyter on CPU. Below are additional specifications:
+- **OS:** macOS Sonoma
+- **Python Version:** 3.13.7
+- **CPU:** Apple M1
+- **Cores:** 8
+- **RAM:** 16 GB
