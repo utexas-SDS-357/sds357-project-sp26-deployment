@@ -1,0 +1,13 @@
+pandas
+geopandas
+numpy
+matplotlib
+jupyter
+shapely
+pyogrio
+fiona
+scipy
+scikit-learn
+statsmodels
+xgboost
+shap
