@@ -1,4 +1,4 @@
-# Team Deployment — Examining Factors Associated with San Diego Police Searches
+# Team Deployment: Examining Factors Associated with San Diego Police Searches
 
 ## Project Overview
 This project studies various predictors of police stop outcomes, focusing on whether a search occurred during a stop.
